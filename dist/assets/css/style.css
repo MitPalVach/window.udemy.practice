@@ -18,6 +18,20 @@ body {
   color: red;
 }
 
+.faded {
+  animation-name: faded;
+  animation-duration: 1.5s;
+}
+
+@keyframes faded {
+  from {
+    opacity: .1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -113,7 +127,7 @@ textarea:focus {
 }
 
 .button {
-  padding: 2.5rem 0rem;
+  padding: 2.5rem 0;
   font-size: 1.7rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -122,8 +136,8 @@ textarea:focus {
   border-radius: 1rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffed26), to(#ffb400));
   background: linear-gradient(180deg, #ffed26 0%, #ffb400 100%);
-  -webkit-box-shadow: 1px 2px 20px 0px rgba(255, 153, 0, 0.4);
-  box-shadow: 1px 2px 20px 0px rgba(255, 153, 0, 0.4);
+  -webkit-box-shadow: 1px 2px 20px 0 rgba(255, 153, 0, 0.4);
+  box-shadow: 1px 2px 20px 0 rgba(255, 153, 0, 0.4);
 }
 
 .button:hover {
@@ -208,11 +222,10 @@ textarea:focus {
 }
 
 .header_btn {
-  background: #ffffff url(../img/header/edit.png) 1rem center no-repeat;
+  background: #ffffff url('../img/header/edit.png') 1rem center no-repeat;
   padding: 1rem 1rem 1rem 5rem;
   border: 2px solid #55a831;
   border-radius: 1rem;
-  background-color: #ffffff;
   font-size: 1.4rem;
   line-height: 1.2;
   font-family: 'Open Sans', sans-serif;
@@ -372,8 +385,7 @@ textarea:focus {
 
 .glazing_block img {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
 }
 
 .glazing_block a {
@@ -591,8 +603,6 @@ textarea:focus {
 
 .works a[data-fancybox="gallery"] .lupa {
   /* position: ; */
-  top: 0;
-  left: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -1050,20 +1060,16 @@ textarea:focus {
 }
 
 .checkbox-custom[id="cold"]::before {
-  background: url(../img/modal_calc/check.png) center center no-repeat;
-}
-
-.no-background {
-  background: url();
+  background: url('../img/modal_calc/check.png') center center no-repeat;
 }
 
 .checkbox-custom[id="warm"]::before {
-  background: url(../img/modal_calc/check_warm.png) center center no-repeat;
+  background: url('../img/modal_calc/check_warm.png') center center no-repeat;
 }
 
 .popup_calc_profile_content .label {
   padding: 1.3rem 2rem;
-  z-index: 18rem;
+  z-index: 18;
   color: #000000;
   font-size: 1.5rem;
   font-weight: 500;
@@ -1137,12 +1143,10 @@ textarea:focus {
 
   .glazing ul {
     padding: 0 2.5rem;
-    padding-right: 0;
   }
 
   .glazing_price {
     padding: 0 2.5rem;
-    padding-right: 0;
   }
 
   .glazing_price p {
@@ -1219,7 +1223,6 @@ textarea:focus {
   .main {
     background-size: cover;
     padding: 5rem 0;
-    padding-bottom: 7rem;
   }
 
   .main h1 {
@@ -1469,7 +1472,6 @@ textarea:focus {
   .form {
     margin-top: 2rem;
     padding: 1.5rem 2rem;
-    padding-bottom: 3rem;
   }
 
   .form h2 {
@@ -1531,7 +1533,7 @@ textarea:focus {
   }
 
   .button {
-    padding: 1.7rem 0rem;
+    padding: 1.7rem 0;
     font-size: 1.5rem;
   }
 
@@ -1573,7 +1575,6 @@ textarea:focus {
 
   .main {
     padding: 3rem 0;
-    padding-bottom: 5rem;
     background: #ffffff url(../img/main/bg.png) 0 0 no-repeat;
     background-size: cover;
   }
@@ -1614,7 +1615,7 @@ textarea:focus {
 
   .glazing_price p {
     display: block;
-    margin-right: 0rem;
+    margin-right: 0;
     margin-bottom: 2rem;
     font-size: 2rem;
     line-height: 1.2;
